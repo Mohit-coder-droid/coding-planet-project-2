@@ -1,0 +1,331 @@
+/*All the css will be written here*/
+
+/* Importing some of the google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+/* Lets create some variables that are needed later */
+:root{
+	--title : 'Roboto', sans-serif;
+	--antic: 'Antic-Slab', serif;
+	--heading: 'Delius', cursive;
+	--default: 'Times New Roman', ;
+	--default: 'Times New Roman', serif;
+}
+
+
+/*--------------------- Our designing of header starts from here ---------------------*/
+#header{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3)), url('header_image.jpg');
+	background-size: cover;
+	color: #ffffff;
+	font-family: var(--title);
+}
+
+ul{
+	padding-top: 51px;
+}
+
+li{
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: inline;
+	margin-top: 400px;
+	cursor: pointer;
+}
+
+
+li:first-child{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: 61px;
+	margin-right: 263px;
+}
+
+li:not(:first-child){
+	margin-right: 55px;
+	color: rgb(185,195,201);
+}
+
+li:hover{
+	/*Do this if someone hover over our first li*/
+	color: #ffffff;
+}
+
+.yoy{
+	font-family: var(--Antic-Slab)
+}
+
+.heading_title{
+	margin-top: 20%;
+	font-family: var(--heading);
+	text-align: center;
+}
+
+.heading_title p{
+	font-size: 2.5rem;
+	margin-top: 3%;
+}
+
+.heading_title button{
+	border-radius: 30px;
+	height: 38px;
+	width: 173px;
+	font-size: 25px;
+	text-align: center;
+	font-family: var(--default);
+}
+
+.heading_first_btn{
+	color: rgb(102,97,91);	
+}
+
+.heading_second_btn{
+	background: transparent;
+	border: 2px solid #ffffff;
+	color: #ffffff;	
+}
+
+/*--------------------- Our designing of header ends from here ---------------------*/
+
+/*--------------------- Our designing of Talk product starts from here ---------------------*/
+
+.talk_product{
+	width: 100vw;
+	height: 100vh;
+}
+
+.talk_product_heading{
+	color: rgb(123,123,123);
+	font-size:calc(1.475rem + 2.7vw);
+	letter-spacing: 2px;	
+}
+
+.talk_product_div{
+	width: 60%;
+	height: 50vh;
+	margin-left: 20%;
+	margin-top: 14%;
+	margin-right: 20%;
+	text-align: center;
+}
+
+#para2{
+	color: rgb(153,149,145);
+	font-size: 1.9rem;
+}
+
+.talk_product_btn{
+	width: 130px;
+	height: 40px;
+	border-radius: 23px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.4rem;
+	background-color: rgb(245,89,61);
+	box-shadow: none;
+	border-color: #ffffff;
+  	border-style: solid;
+}
+
+.talk_product_btn:hover{
+	background-color: rgb(255,89,80);
+	color: #ffffff;
+}
+
+.fa-camera{
+	color: rgb(245,89,61);
+}
+
+.icons{
+
+}
+
+.sub_icons{
+	text-align: center;
+	display: inline-block;
+	margin-right: 2vw;
+	margin-left: 2vw;
+	width: 20vw;
+	height: 40vh;
+}
+
+.sub_icons > p{
+	font-size: 1.5rem;
+	color: rgb(200,200,200);
+}
+
+.sub_icon_heading{
+	margin-top: 26px;
+	font-family: var(--title)
+	font-weight: bold;
+}
+
+.sub_icons > a{
+	color: rgb(245,89,61);
+	text-decoration: none;
+	font-size: 1.3rem;
+}
+
+/*--------------------- Our designing of talk product div ends from here ---------------------*/
+
+/*--------------------- Our designing of About makers div starts from here ---------------------*/
+
+.makers{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(21,31,32);
+
+	display: grid;
+	place-items: center;
+}
+
+.about{
+	width: 93vw;
+	height: 75vh;
+	color: #ffffff;
+	text-align: center;	
+}
+
+.persons{
+	width: 28vw;
+	height: 62vh;
+	margin: 0 3px;
+	display: inline-block;	
+}
+
+.persons_image{
+	width: 106px;
+	margin: 0 90.98px;
+	height: 106px;
+	border-radius: 50%;
+	background-color: black;
+	background-image: url('images/person-2.jpg');
+	background-size: cover;
+}
+
+.persons_image:first-child{
+	background-image: url('images/person-1.jpg');
+	background-size: cover;	
+}
+
+#img-1{
+	background-image: url('images/person-1.jpg');
+	background-size: cover;	
+}
+
+#img-2{
+	background-image: url('images/person-2.jpg');
+	background-size: cover;	
+}
+
+#img-3{
+	background-image: url('images/person-3.jpg');
+	background-size: cover;	
+}
+
+.name{
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.persons_work{
+	color: rgb(94,103,110);
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.persons_{
+	font-size: 1.5rem;
+	color: rgb(128,133,134);
+	margin-top: 20px;
+}
+
+/*--------------------- Our designing of About makers div ends from here ---------------------*/
+
+/*--------------------- Our designing of contact form starts from here ---------------------*/
+
+.contact{
+	width: 100vw;
+	height: 80vh;
+	/*background-color: tomato;*/
+
+	display: grid;
+	place-items: center;
+}
+
+.form{
+	text-align: center;
+	width: 50vw;
+	height: 60vh;
+	/*background-color: green;*/
+}
+
+.form>h1{
+	font-size: 40px;
+	color: rgb(173,170,167);	
+}
+
+.part-1{
+	width: 23vw;
+	display: inline-block;
+	text-align: left;
+}
+
+.part-1>input{
+	width: 23vw;
+	height: 5vh;
+	font-size: 1.5rem;
+	padding-left: 8px;
+	border-radius: 5px;
+	border:1px solid  rgb(222,221,219);
+}
+
+.part-1>p{
+	font-size: 1.4rem;
+	color: rgb(201,200,197);
+}
+
+.form_2{
+	text-align: left;
+	margin-top: 3px;
+}
+
+.form_2>p{
+	font-size: 1.4rem;
+	color: rgb(201,200,197);
+}
+
+.form_2>textarea{
+	width: 50vw;
+	height: 15vh;
+	font-size: 1.5rem;
+	padding-left: 8px;
+	border-radius: 5px;
+	border:1px solid  rgb(222,221,219);
+}
+
+.last-btn{
+	width: 18vw;
+	height: 8vh;
+	background-color: rgb(243,60,26);
+	color: #ffffff;
+	margin-top: 20px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.last-btn:hover{
+	color: #ffffff;
+}
